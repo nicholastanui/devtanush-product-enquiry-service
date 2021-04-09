@@ -24,7 +24,7 @@ public class ProductEnquiryController {
                                                   @PathVariable int unit
                                                   ) {
         ProductEnquiryBean productEnquiryBean = client.checkProductStock(name, availability);
-        double totalPrice = productEnquiryBean.getTotalPrice()*unit;
+        double totalPrice = productEnquiryBean.getProductPrice().doubleValue()*unit;
         double discounts = productEnquiryBean.getDiscountOffer();
         double discountPrice = totalPrice*discounts/100;
 
