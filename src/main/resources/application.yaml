@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: devtanush-product-enquiry-service
+server:
+  port: ${port:8700}
