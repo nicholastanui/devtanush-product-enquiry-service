@@ -3,3 +3,7 @@ spring:
     name: devtanush-product-enquiry-service
 server:
   port: ${port:8700}
+
+devtanush-product-stock-service:
+  ribbon:
+    listOfServices: http://localhost:8800, http://localhost:8801
