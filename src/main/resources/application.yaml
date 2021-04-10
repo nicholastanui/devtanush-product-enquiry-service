@@ -4,6 +4,6 @@ spring:
 server:
   port: ${port:8700}
 
-devtanush-product-stock-service:
-  ribbon:
-    listOfServers: http://localhost:8800, http://localhost:8801
+#devtanush-product-stock-service:
+#  ribbon:
+#    listOfServers: http://localhost:8800, http://localhost:8801
