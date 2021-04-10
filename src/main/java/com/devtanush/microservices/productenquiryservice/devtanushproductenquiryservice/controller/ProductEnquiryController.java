@@ -15,8 +15,6 @@ public class ProductEnquiryController {
 
     @Autowired
     ProductStockClient client;
-    @Autowired
-    Environment environment;
 
     @GetMapping("/product-enquiry/name/{name}/availability/{availability}/unit/{unit}")
     public ProductEnquiryBean getEnquiruOfProduct(@PathVariable String name,
@@ -36,7 +34,7 @@ public class ProductEnquiryController {
                 productEnquiryBean.getDiscountOffer(),
                 unit,
                 discountPrice,
-                Integer.parseInt(Objects.requireNonNull(environment.getProperty("local.server.port")))
+                productEnquiryBean.getPort()
                 );
 
     }

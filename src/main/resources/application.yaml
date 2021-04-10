@@ -6,4 +6,4 @@ server:
 
 devtanush-product-stock-service:
   ribbon:
-    listOfServices: http://localhost:8800, http://localhost:8801
+    listOfServers: http://localhost:8800, http://localhost:8801
